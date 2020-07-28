@@ -30,6 +30,6 @@ class CreateModelKontaksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('model_kontaks');
+        Schema::dropIfExists('kontak'); //sebelumnya ('model_kontaks')
     }
 }

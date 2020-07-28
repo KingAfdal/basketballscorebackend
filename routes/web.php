@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('kontak', 'Kontak'); //tambahkan baris ini
 Route::get('/', function () {
-    return view('welcome');
+    return view('index'); //sebelumnya ('welcome')
 });
+
+Route::get('/halaman-kedua', function () {
+    return view('halamandua');
+});
+
+Route::get('/kontak', 'ControllerKontak@index');
